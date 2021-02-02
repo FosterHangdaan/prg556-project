@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Page Author: Foster Hangdaan -->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page language="java"
+        contentType="application/xhtml+xml; charset=UTF-8" pageEncoding="UTF-8" />
+    <jsp:output omit-xml-declaration="no"
+        doctype-root-element="html"
+        doctype-public="-//W3C//DTD XHTML 1.1//EN"
+        doctype-system="http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" />
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fp="com.fluffypony">
+<head>
+<title>The Playground</title>
+<link rel='stylesheet' type='text/css' href='./styles/main.css' />
+<link rel='stylesheet' type='text/css' href='./styles/clientlogin.css' />
+<link rel='stylesheet' type='text/css' href='./styles/badrequest.css' />
+</head>
+<body style='background-color:grey;'>
+	<h1>This is HEADING 1</h1>
+	<h2>This is HEADING 2</h2>
+	<h3>This is HEADING 3</h3>
+	<p>This is a paragraph</p>
+	<div class='list-heading'>This is a list heading.</div>
+	<p class='large-text'>This is in large text.</p>
+	<p class='medium-text'>This is in medium text.</p>
+	<p class='normal-text'>This is normal text.</p>
+	<h1>This is HEADING 1 with an <em>emphasis</em></h1>
+	<h2>This is HEADING 2 with a <strong>strong</strong></h2>
+	<a href='./lol'>This is a link.</a>
+</body>
+</html>
+</jsp:root>

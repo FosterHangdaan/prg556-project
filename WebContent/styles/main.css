@@ -1,0 +1,118 @@
+/*This is the site-wide css for Fluffy-State Car Rental
+
+Main Colors:
+- #008282 = Teal		; For mainheading backgrounds
+- #1e1e1e = JetBlack	; For subheading backgrounds
+- #ffa000 = Orange		; For icons, highlighting and emphasis
+- #f0f0f0 = Off White	; For text and paragraphs
+- #ed572d = Red			; Links
+*/
+
+/*<------------------------------- WEB FONTS ------------------------------->*/
+@import url('https://fonts.googleapis.com/css?family=Chango|Roboto:700|Ubuntu:400,700&display=swap');
+/* Using the fonts:
+    font-family: 'Chango', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
+/*<------------------------------- SET DEFAULT VALUES ------------------------------->*/
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	position: relative;
+	min-height: 100%;
+	min-width: 1900px;
+}
+
+body {
+	background-color: #f0f0f0;
+}
+
+/*<------------------------------- HEADINGS ------------------------------->*/
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Chango', cursive;
+	color: #f0f0f0;
+}
+h1 { font-size: 30pt; }
+h2 { font-size: 24pt; }
+h3 { font-size: 20pt; }
+h4 { font-size: 18pt; }
+h5 { font-size: 16pt; }
+
+.list-heading {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	color: #f0f0f0;
+	font-size: 16pt;
+}
+
+/*<------------------------------- PARAGRAPHS / TEXT ------------------------------->*/
+
+p {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 12pt;
+}
+
+em, strong { color: #ffa000; }
+
+.large-text, .medium-text, .normal-text {
+	font-family: 'Ubuntu', sans-serif;
+	color: #2a2a2a;
+}
+.large-text {
+	font-size: 18pt;
+	font-weight: bold;
+}
+.medium-text { font-size: 14pt; }
+.normal-text { font-size: 12pt; }
+
+span.bold {
+	font-weight: bold;
+}
+
+/*<------------------------------- MESSAGES ------------------------------->*/
+
+/*	For displaying error messages. 
+	Check badrequest.jspx for html structure example.
+*/
+.error-message-container {
+	margin: 75px auto;
+	text-align: center;
+	width: 800px;
+}
+.error-message-container img { width: 140px; }
+.error-message-container td { padding: 15px; }
+.error-message-container p {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	font-size: 20pt;
+	color: #ca7f00;
+}
+.error-message-container a {
+	text-decoration: none;
+	font-size: 16pt;
+	color: #ed572d;
+}
+.error-message-container a:hover {
+	text-decoration: underline;
+	color: #551a8b;
+}
+
+/*<------------------------------- MISCELLANEOUS ------------------------------->*/
+
+/* For Links */
+.link {
+	text-decoration: none;
+	font-size: 16pt;
+	color: #ed572d;
+}
+
+
+.light-background { background-color: #f0f0f0; }
+.grey-background { background-color: #dddddd; }

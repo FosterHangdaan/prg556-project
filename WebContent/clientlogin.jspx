@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Page Author: Foster Hangdaan -->
+<jsp:root
+	xmlns:jsp="http://java.sun.com/JSP/Page"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	version="2.0">
+    <jsp:directive.page language="java"
+        contentType="application/xhtml+xml; charset=UTF-8" pageEncoding="UTF-8" />
+    <jsp:output omit-xml-declaration="no"
+        doctype-root-element="html"
+        doctype-public="-//W3C//DTD XHTML 1.1//EN"
+        doctype-system="http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" />
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fp="com.fluffypony">
+<head>
+<title>Login &amp;mdash; Fluffy-State Car Rental</title>
+<link rel='stylesheet' type='text/css' href='./styles/main.css' />
+<link rel='stylesheet' type='text/css' href='./styles/clientlogin.css' /> 
+</head>
+<body>
+	<div class='login-container'>
+		<div class='main-title-container'>
+			<h1 title='The best in car rental services.'>Welcome to Fluffy-State Car Rental</h1>
+		</div>
+		<div class='logo-box'>
+			<img src='./images/sportscar-f0f0f0-512.svg' alt='sportscar icon' />
+		</div>
+		<div>
+			<form id='login-form' method='post' action='clientlogin.jspx'>
+			<table>
+				<tr>
+					<td>
+					<p>Username</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<input type='text' id='username-input' name='username' value="${username}" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p>Password</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<input type='password' id='userpassword-input' name='password' />
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<input id='login-button' type='submit' value='LOGIN' />
+					</td>
+				</tr>
+			</table>
+			</form>
+		</div>
+	</div>
+	<c:if test="${authorizationFail}" >
+		<div class='error-message-container'>
+		<table>
+			<tr>
+				<td>
+				<img src='./images/no-entry-ffa000-512.svg' alt='no entry icon' />
+				</td>
+				<td>
+				<p class='large-text'>ACCESS DENIED. You have entered the wrong username or password. Please try again.</p>
+				</td>
+			</tr>
+		</table>
+		</div>
+	</c:if>
+</body>
+</html>
+</jsp:root>

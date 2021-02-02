@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Page Author: Mark Brierley -->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:c="http://java.sun.com/jsp/jstl/core" version="2.0">
+    <jsp:directive.page language="java" />
+	<div class="header-container">
+		<div class="header-item title">
+			<div class="title-section title-left">
+				<h1>Fluffy-State</h1>
+			</div>
+			<div class="title-section title-middle">
+				<img class="company-logo" src="./images/fluffy-state-logo.svg" alt="Fluffy-State Company Logo" />
+			</div>
+			<div class="title-section title-right">
+				<h1>Car Rental</h1>
+			</div>
+		</div>
+		<div class="header-item client-info">
+			<div class="client">
+				<p class="medium-text">Client: ${firstName} ${lastName} &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Total Bookings: ${numBookings}</p>
+			</div>
+		</div>
+		<div class="header-item menu">
+				<div class="menuItem"><a class="heading" href="bookrental.jspx" title="Book a Rental">New Rental</a></div>
+				<div class="menuItem"><a class="heading" href="showbookings.jspx" title="See Current Bookings">Bookings</a></div>
+				<div class="menuItem"><a class="heading" href="logout.jspx" title="Log Out">Log Out</a></div>
+		</div>
+	</div>
+</jsp:root>

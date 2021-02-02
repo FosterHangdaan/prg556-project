@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Page Author: Foster Hangdaan -->
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:c="http://java.sun.com/jsp/jstl/core" version="2.0">
+    <jsp:directive.page language="java" />
+<div class="pagefooter-container">
+	<div class='pagefooter-left'>
+		<p class='medium-text'>2019 Copyright&#169; TheSpamAssassins <br />
+		All icons taken from www.flaticon.com
+		</p>
+	</div>
+	<div class='pagefooter-middle'>
+		<img class='company-logo' src='./images/fluffy-state-logo.svg' alt='Fluffy-State Company Logo' />
+	</div>
+	<div class='pagefooter-right'>
+		<h5>Contact Us</h5>
+		<ul>
+			<li class='normal-text'><strong>Address:</strong> <span class='bold'> 1234 Electric Avenue</span></li>
+			<li class='normal-text'><strong>Phone Number:</strong> <span class='bold'> 777-777-3333</span></li>
+			<li class='normal-text'><strong>Email:</strong> <span class='bold'> support@fluffystate.com</span></li>
+		</ul>
+	</div>
+</div>
+</jsp:root>

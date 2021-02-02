@@ -1,0 +1,99 @@
+/* Page-specific styles for clientlogin.jspx */
+
+/*<------------------------------- LOGIN FORM CSS ------------------------------->*/
+body {
+	background-image: linear-gradient(to right, #00baba, #f0f0f0, #f0f0f0, #f0f0f0, #00baba);
+	overflow: hidden;
+}
+
+.login-container {
+	width: 500px;
+	margin: auto;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.main-title-container {
+	background-color: #008282;
+	border-radius: 15px 15px 0px 0px;
+	padding: 10px 5px;
+}
+
+.main-title-container > h1 {
+	background-image: url(../images/stripes_yellow.png);
+	background-repeat: no-repeat;
+	background-size: 5400px 150px;
+	color: transparent;
+	background-clip: text;
+	animation: move-background 100s linear 0s infinite;
+}
+@keyframes move-background {
+    from	{background-position: 0% 50%;}
+    to		{background-position: 100% 50%; }
+}
+
+
+.logo-box {
+	position: relative;
+	background-color: #009595;
+	height: 253px;
+}
+.logo-box img {
+	position: absolute;
+	width: 50%;
+	animation-name: car-sway;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+@keyframes car-sway {
+	0%		{right: 100px;}
+	50%		{right: 150px;}
+	100%	{right: 100px;}
+}
+
+#login-form { 
+	color: #cccccc;
+	background-color: #008282;
+	border-radius: 0px 0px 15px 15px;
+	padding: 20px;
+}
+
+#login-form table { width: 100%; }
+
+#username-input,
+#userpassword-input {
+	height: 15px;
+	border-radius: 15px;
+	border-style: none;
+	padding: 10px 10px;
+}
+
+#login-button {
+	font-size: 13pt;
+	margin-top: 25px;
+	width: 150px;
+	height: 50px;
+	background-color: #00baba;
+	border: 2px outset #cccccc;
+	border-radius: 5px;
+	color: #f0f0f0;
+}
+#login-button:hover {
+	background-color: #09c3c3; 
+}
+#login-button:active {
+	border: 2px inset #cccccc;
+}
+
+/*<------------------------------- LOGIN ERROR CSS ------------------------------->*/
+
+.error-screen-container {
+	margin: 50px auto;
+ 	text-align: center;
+ 	width: 800px;
+}
+
+.error-screen-container img {
+	width: 75%;
+}
+

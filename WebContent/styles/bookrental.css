@@ -1,0 +1,35 @@
+/* Page-specific styles for bookrental.jspx */
+
+.userParams { height: 30px; text-align: center; padding-bottom: 120px; padding-top: 40px; }
+.checkButton {  background-color: #ffa000; color: black; font-size: 16px; display: inline-block; padding: 15px 30px; margin-top: 20px; padding-bottom: 15px; border-radius: 30px;}
+.params { font-weight: bold; }
+.inputs { padding-right: 15px; padding-bottom: 25px; }
+.availableContainer { margin: 25px auto; margin-bottom: 150px; width: 900px; height: 390px; border: 2px solid black; border-radius: 8px; }
+.availableContainer h2 { height: 10%; width: 100%; background-color: #1e1e1e; color: #ffa000;  text-align: center; padding-top: 5px; font-family: 'Ubuntu', sans-serif; font-size: 18pt; }
+.bookingsList  { height: 85%; width: 100%; overflow: hidden; overflow-y: scroll; }
+.availableContainer h3 { height: 5%; width: 100%; background-color: #1e1e1e; }
+.bookButton { margin-left: 10px; background-color: #008282; color: #f0f0f0; font-size: 16px; display: inline-block; padding: 15px 30px; border-radius: 30px; }
+h3, h5 { color: black; }
+.headers { font-family: 'Ubuntu', sans-serif; text-align: center; padding-bottom: 0px;}
+.bookingsList li {
+	width: 100%;
+	height: 70px;
+}
+.list-item { 
+	float: left;
+	height: 70px;
+	width: 25%;
+	line-height: 70px;
+	vertical-align: middle;
+}
+.vehicle-imagesize img { 
+	display: inline-block;
+	width: 40px;
+	margin-top: 15px;
+}
+.vehicle-imagesize {
+	text-align: center;
+}
+.vehicle-size, .vehicle-make {
+	text-align: left;
+}
